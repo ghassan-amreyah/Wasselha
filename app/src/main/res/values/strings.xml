@@ -1,0 +1,239 @@
+<resources>
+    <string-array name="vehicle_type">
+        <item>Car</item>
+        <item>Van</item>
+        <item>Truck</item>
+    </string-array>
+
+    <string-array name="delivery_type">
+        <item>Collect from</item>
+        <item>Handover to</item>
+    </string-array>
+
+    <string-array name="preferences">
+        <item>Location</item>
+        <item>Price</item>
+        <item>Time</item>
+        <item>Review</item>
+    </string-array>
+
+    <string-array name="packageType">
+        <item>Small (Car)</item>
+        <item>Normal (Van)</item>
+        <item>Big (Truck)</item>
+    </string-array>
+
+    <string name="app_name">Wasselha</string>
+    <string name="main_title">Wasselha</string>
+    <string name="welcome">Welcome to Wasselha</string>
+    <string name="need">all on one you need</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="login_title">Login to Wasselha</string>
+    <string name="username_or_phone_number_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="main_login_btn">Login</string>
+    <string name="question_signup">Don\'t have an account?‎ ‎ ‎</string>
+    <string name="question_login">Do have an account?‎ ‎ ‎</string>
+    <string name="signup_in_question"><u>Signup</u></string>
+    <string name="login_in_question"><u>Login</u></string>
+    <string name="select_type_of_signup">Signup as:</string>
+    <string name="signup_as_customer">Customer</string>
+    <string name="signup_as_transporter">Transporter</string>
+    <string name="signup_as_collection_point_provider">Collection point provider</string>
+    <string name="first_name_customer">First Name</string>
+    <string name="first_name_customer_hint">Enter your first name</string>
+    <string name="last_name_customer">Last Name</string>
+    <string name="last_name_customer_hint">Enter your last name</string>
+    <string name="email_customer_signup_textview">Email</string>
+    <string name="email_signup_customer_hint">Enter your email</string>
+    <string name="passwordc_customer_signup_textview">Password</string>
+    <string name="phone_number_customer_signup_textview">Phone Number</string>
+    <string name="phone_number_customer_signup_hint">Enter your phone number</string>
+    <string name="password_customer_signup_hint">Enter your password</string>
+    <string name="customer_signup_top_title">Customer signup</string>
+    <string name="re_repeat_password_customer_signup">Re-Repeat Password</string>
+    <string name="re_repeat_password_hint">Enter re-repeat password</string>
+    <string name="address_customer_signup_textview">Address</string>
+    <string name="address_customer_signup_hint">Enter your address</string>
+    <string name="transporter_signup_top_title">Transporter signup</string>
+    <string name="national_id_transporter_signup_hint">Enter your national id</string>
+    <string name="national_id_signup_textview">National id</string>
+    <string name="upload_image">Upload image</string>
+    <string name="vehicle_license_photo">Vehicle license photo</string>
+    <string name="personal_license_photo">Personal license photo</string>
+    <string name="vehicle_type_transporter_signup_text_view">Vehicle type</string>
+    <string name="collection_point_provider_signup_top_title">Collection point provider signup</string>
+    <string name="home_in_bottom_bar">Home</string>
+    <string name="reservation_in_bottom_bar">Reservation</string>
+    <string name="track_in_bottom_bar">Track</string>
+    <string name="profile_in_bottom_bar">Profile</string>
+    <string name="ads_text">Offer delivery</string>
+    <string name="date_offer">June 25 - August 10</string>
+    <string name="service_available_main_title">Services Available</string>
+    <string name="transporter_name_in_customer_recyclerView">Transporter:</string>
+    <string name="time_in_customer_recyclerView">Time:</string>
+    <string name="details_in_customer_card_recycler_view">Details</string>
+    <string name="notifications_in_bottom_bar">Notifications</string>
+    <string name="main_search_area_hint">Search about you need…</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="search_filter_main_title">Search filter</string>
+    <string name="source_in_filter">Source</string>
+    <string name="destination_in_filter">Destination</string>
+    <string name="enter_the_source_city_hint">Enter the source</string>
+    <string name="enter_the_destination_city_hint">Enter the destination</string>
+    <string name="destination_in_filter_main_title">Destination</string>
+    <string name="price_in_filter">Price</string>
+    <string name="search_btn_in_filter_search">Search</string>
+    <string name="price_in_filter_title">Price</string>
+    <string name="enter_the_price_in_filter_hint">Enter the price</string>
+    <string name="time_in_filter_title">Time</string>
+    <string name="service_details_main_title">Service Details</string>
+    <string name="path_in_service_details_page">Path:</string>
+    <string name="vehicle_type_in_service_details_page">Car</string>
+    <string name="price_in_service_details_page">Price:</string>
+    <string name="reserve_btn_in_service_details_page">Reserve</string>
+    <string name="vehicle_number_transporter_signup_hint">Enter the vehicle number</string>
+    <string name="vehicle_number_customer_signup_textview">Vehicle Number</string>
+    <string name="vehicle_photo_transporter_signup">Vehicle photo</string>
+    <string name="settings_in_profile_page">Settings</string>
+    <string name="claims_in_profile_page">Claims</string>
+    <string name="favorites__in_profile_page">Favorites</string>
+    <string name="logout_in_profile_page">Logout</string>
+    <string name="inbox_in_profile_page">InBox</string>
+    <string name="history_in_profile_page">History</string>
+    <string name="home_in_bottom_bar_transporter">Home</string>
+    <string name="new_service_in_bottom_bar_transporter">New service</string>
+    <string name="reservations_in_bottom_bar_transporter">Reservations</string>
+    <string name="profile_in_bottom_bar_transporter">Profile</string>
+    <string name="notifications_in_bottom_bar_transporter">Notifications</string>
+    <string name="cars_in_profile_page">Cars</string>
+    <string name="skip_btn_in_registration_page">Skip</string>
+    <string name="add_new_service_main_title">Add new service</string>
+    <string name="create_btn_in_add_new_service">Create</string>
+    <string name="your_services_in_main_transporter_page">Your services</string>
+    <string name="notifications_in_bottom_bar_in_collection_point_provider">Notifications</string>
+    <string name="profile_in_bottom_bar_in_collection_point_provider">Profile</string>
+    <string name="new_collection_point_in_bottom_bar_in_collection_point_provider">New collection point</string>
+    <string name="name_collection_point">Name</string>
+    <string name="enter_name_of_collection_point_hint">Enter the name of collection point</string>
+    <string name="open_time_collection_point">Open time</string>
+    <string name="add_btn_in_add_collection_point">Add</string>
+    <string name="add_new_collection_point">Add new collection point</string>
+    <string name="close_time_collection_point">Close time</string>
+    <string name="location_collection_point">Location</string>
+    <string name="add_location_collection_point">Add location</string>
+    <string name="manage_btn_in_home_list_view_collection_point">Manage</string>
+    <string name="collection_point_cpmplete_in_list_view_collection_point">collection point</string>
+    <string name="select_type_of_login">Login as:</string>
+    <string name="title_notifications_customer_list_view">Notifications</string>
+    <string name="MAPS_API_KEY">AIzaSyCc0zpvvElMnKIwU1wL0GzUSjd0ALk2b28</string>
+    <string name="collection_points_in_profile_page">Collection \nPoints</string>
+    <string name="status_in_profile_page">Status:</string>
+    <string name="update_info_transporter">Update information</string>
+    <string name="enter_your_new_email_hint">Enter your new email</string>
+    <string name="enter_your_new_password_hint">Enter your new password</string>
+    <string name="enter_your_new_phone_number_hint">Enter your new phone number</string>
+    <string name="update_btn">Update</string>
+    <string name="vehicle_image_in_car_info_page">Vehicle image:</string>
+    <string name="vehicle_license_in_car_info_page">Vehicle license:</string>
+    <string name="back_to_profile_page_btn">Back to profile page</string>
+    <string name="vehicle_information_main_title">Vehicle Information</string>
+    <string name="vehicle_ninformation_in_transporter_profile">Vehicle \nInformation</string>
+    <string name="review_in_claim_list_view">Review:</string>
+    <string name="claims_in_transporter_claims_page">Claims</string>
+    <string name="requests_in_bottom_bar_transporter">Requests</string>
+    <string name="package_type_in_reservation_details">Package type:</string>
+    <string name="enter_package_type_hint">Enter package type</string>
+    <string name="enter_package_weight_hint">Enter package weight</string>
+    <string name="package_weight_in_reservations_details">Package weight:</string>
+    <string name="collect_from_in_reservations_details">Collect from:</string>
+    <string name="location_radio_button">Location</string>
+    <string name="collection_point_radio_button">Collection point</string>
+    <string name="handover_to_in_reservations_details">Handover to:</string>
+    <string name="enter_the_price_hint_in_reservations_details">Enter the price</string>
+    <string name="price_in_reservations_details">Price:</string>
+    <string name="customer_review_in_request_list_view">Customer review:</string>
+    <string name="path_in_request_list_view">Path: </string>
+    <string name="rservation_details">Reservation details</string>
+    <string name="select_type_of_delivery_in_reservation_details_acivity">Select type of delivery:</string>
+    <string name="reviews_in_profiles">Reviews</string>
+    <string name="source_in_reservation_customer_listView">Handover To:</string>
+    <string name="destination_in_reservation_customer_listView">Destination:</string>
+    <string name="status_in_reservation_customer_listView">Status:</string>
+    <string name="date_in_reservation_customer_listView">Date:</string>
+    <string name="your_reservation_history_in_reservation_customer_listView">Your reservation history</string>
+    <string name="action_time_in_customer_delivery_status">Action time:</string>
+    <string name="collection_from_in_customer_delivery_status">Collection from:</string>
+    <string name="delivery_status_title">Delivery status</string>
+    <string name="handover_to_in_customer_delivery_status">Handover to:</string>
+    <string name="add_review_btn_customer_delivery_satus">Add review</string>
+    <string name="add_review_title">Add review about transporter</string>
+    <string name="review_in_add_review_a_transporter">Review</string>
+    <string name="message_in_add_review_a_transporter">Notes</string>
+    <string name="enter_the_review_in_add_review_a_transporter">Enter the review value</string>
+    <string name="enter_the_notes_in_add_review_a_transporter">Enter the notes…</string>
+    <string name="add_review_about_transporter_title">Add review about transporter</string>
+    <string name="add_review_about_customer_title">Add review about customer</string>
+    <string name="add_review_about_customer">Add review about:</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <string name="change_language"><u>Change Language?</u></string>
+    <string name="settings_title">Settings</string>
+    <string name="update_my_information">Update my information</string>
+    <string name="change_the_language">Change the language</string>
+    <string name="select_your_language">Select your language:</string>
+    <string name="enter_the_name_person">Enter the name person</string>
+    <string name="enter_the_name_of_the_person_receiving_the_package">Enter the name of the person receiving the package</string>
+    <string name="send_message">Send message</string>
+    <string name="add_review">Add review</string>
+    <string name="customer">Customer</string>
+    <string name="if_send_message">If any problem, you can send a message to the customer</string>
+    <string name="enter_the_person_name">Enter the person name</string>
+    <string name="enter_the_name_of_person_that_collect_from_nor_handover_to">Enter the name of person that collect from \nor handover to:</string>
+    <string name="collection_point_provider">Collection point provider</string>
+    <string name="vehicle_number">Vehicle number:</string>
+    <string name="not_available">Not available</string>
+    <string name="vehicle_type">Vehicle type:</string>
+    <string name="collection_point_information">Collection point information</string>
+    <string name="name">Name:</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="open_time">Open time:</string>
+    <string name="close_time">Close time:</string>
+    <string name="location">Location:</string>
+    <string name="loading">Loading…</string>
+    <string name="requests">Requests</string>
+    <string name="to">to</string>
+    <string name="vehicle_type_in_service_details">Vehicle type:</string>
+    <string name="choose_filter">Choose your most important preference:</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="enter_the_package_type">Enter the package type</string>
+    <string name="customer_name">Customer name:</string>
+    <string name="from">From</string>
+    <string name="open_tracking_page">Open tracking page</string>
+    <string name="not_correct">The information is not correct, try again!</string>
+    <string name="fill_fields">Fill all fields, and try again!</string>
+    <string name="done_login">Login succeeded!</string>
+    <string name="from_with_points">From:</string>
+    <string name="your_collection_points">Your collection points</string>
+    <string name="enter_the_message">Enter the message…</string>
+    <string name="done">Done</string>
+    <string name="update_status">Status updated!</string>
+    <string name="source_collection_point_provider">Source collection Point Provider</string>
+    <string name="destination_collection_point_provider">Destination collection Point Provider</string>
+    <string name="collection_point">collection point</string>
+    <string name="pass_not_match">Passwords is not match!</string>
+    <string name="pass_more_than_8chr">Password must contain more than 8 characters!</string>
+    <string name="already_exist">Email or phone number already exists!</string>
+    <string name="done_signup">Signup Successfully</string>
+    <string name="reference_number">Reference number:</string>
+    <string name="create_new_account">A new account is being created…</string>
+    <string name="select_location">Select your location! and try again</string>
+    <string name="send_message_to_transporter">If any problem, you can send a message to the transporter</string>
+    <string name="source_collection_point">Source collection point</string>
+    <string name="destination_collection_point">Destination collection point</string>
+
+
+</resources>

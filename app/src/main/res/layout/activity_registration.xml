@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_selver"
+    tools:context=".RegistrationActivity">
+
+
+    <ImageView
+        android:id="@+id/mainImgRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro" />
+
+    <ImageView
+        android:id="@+id/logoImgInRegisterPage"
+        android:layout_width="382dp"
+        android:layout_height="443dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainImgRegister"
+        app:layout_constraintEnd_toEndOf="@+id/mainImgRegister"
+        app:layout_constraintStart_toStartOf="@+id/mainImgRegister"
+        app:layout_constraintTop_toTopOf="@+id/mainImgRegister"
+        app:srcCompat="@drawable/maincover" />
+
+
+    <TextView
+        android:id="@+id/mainTitleInPageRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/changasemibold"
+        android:text="@string/main_title"
+        android:textColor="@color/light_selver"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logoImgInRegisterPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeInRegisterPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="@string/welcome"
+        android:textColor="@color/light_black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImgRegister" />
+
+    <TextView
+        android:id="@+id/needInRegisterPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="@string/need"
+        android:textColor="@color/light_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeInRegisterPage"
+        app:layout_constraintStart_toStartOf="@+id/welcomeInRegisterPage"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeInRegisterPage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtnInLoginPage"
+        style="@android:style/Widget.Button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/background_login_btn"
+        android:text="@string/login"
+        android:textColor="@color/light_selver"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/needInRegisterPage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signupBtnInRegisterPage"
+        style="@android:style/Widget.Button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/background_signup_btn"
+        android:text="@string/signup"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtnInLoginPage" />
+
+    <TextView
+        android:id="@+id/changelang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/quantum_grey600"
+        android:text="@string/change_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupBtnInRegisterPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

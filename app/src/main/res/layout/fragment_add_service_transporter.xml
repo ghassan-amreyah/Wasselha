@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_selver"
+    tools:context=".Transporter.AddServiceTransporterFragment">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/addNewServiceMainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/add_new_service_main_title"
+                    android:textColor="@color/dark_green"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/changabold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="32dp"
+                android:paddingBottom="32dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/filter_style"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addNewServiceMainTitle">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/light_selver"
+                    android:text="@string/source_in_filter" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="5dp">
+
+                    <fragment
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/sourceCityInAddServiceMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        tools:context=".Transporter.AddServiceTransporterFragment" />
+
+                    <View
+                        android:id="@+id/sourceMapTransparentView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/light_selver"
+                    android:text="@string/destination_in_filter_main_title" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="5dp">
+
+                    <fragment
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/destinationCityInAddServiceMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        tools:context=".Transporter.AddServiceTransporterFragment" />
+
+                    <View
+                        android:id="@+id/destinationMapTransparentView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/light_selver"
+                    android:text="@string/price_in_filter_title" />
+
+                <EditText
+                    android:id="@+id/priceInAddNewService"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/enter_the_price_in_filter_hint"
+                    android:padding="8dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:textColor="@color/light_selver"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_text_filter_style"
+                    android:textColorHint="@color/quantum_grey400"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:id="@+id/dateService"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/light_selver"
+                    android:text="Date" />
+
+                <TextView
+                    android:id="@+id/dateNewServiceTransporter"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/date_style"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/light_selver"
+                    android:textColorHint="@color/quantum_grey400"
+                    android:hint="Cilck to select the date" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/light_selver"
+                    android:text="@string/time_in_filter_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <NumberPicker
+                        android:id="@+id/numPickerHourInAddNewService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"/>
+
+                    <NumberPicker
+                        android:id="@+id/numPickerMinInAddNewService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"/>
+
+                    <NumberPicker
+                        android:id="@+id/numPickerAMPMInAddNewService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addServiceBtnInAddNewServicePage"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/signup_background"
+                    android:text="@string/create_btn_in_add_new_service"
+                    android:textColor="@color/dark_green"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nav_home_collection_point_provider"
+        android:title="@string/home_in_bottom_bar_transporter"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/nav_add_collection_point"
+        android:title="@string/new_collection_point_in_bottom_bar_in_collection_point_provider"
+        android:icon="@drawable/ic_add"/>
+
+    <item android:id="@+id/nav_notifications_collection_point_provider"
+        android:title="@string/notifications_in_bottom_bar_in_collection_point_provider"
+        android:icon="@drawable/ic_notifications"/>
+
+    <item android:id="@+id/nav_profile_collection_point_provider"
+        android:title="@string/profile_in_bottom_bar_in_collection_point_provider"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

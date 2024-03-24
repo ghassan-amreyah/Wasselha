@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_selver"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/customerNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:textSize="17sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customerNameInRequestsListview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Not available!"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customerReviewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/customerNameLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_review_in_request_list_view"
+            android:textSize="17sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customerReviewInRequestsListview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Not available!"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pathFromRequestLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/customerReviewLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/path_in_request_list_view"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/dark_green" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/dark_yellow2" />
+
+        <TextView
+            android:id="@+id/sourceCityInRequestsListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not available"
+            android:layout_marginStart="5dp"
+            android:textSize="17sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pathToRequestLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/pathFromRequestLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/to"
+            android:textColor="@color/dark_yellow2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destinationCityInInRequestsListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not available"
+            android:layout_marginStart="25dp"
+            android:textSize="17sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/pathToRequestLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_in_reservations_details"
+            android:textSize="17sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/priceInRequestsListview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Not available!"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/priceLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timeOfServiceInListViewMainPageTransporter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/quantum_grey700"
+            android:layout_marginTop="8dp"
+            style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+            android:text="Not available time!" />
+
+        <TextView
+            android:id="@+id/rejectRequestBtnInRequestsListView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/agreeRequestBtnInRequestsListView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_agree" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

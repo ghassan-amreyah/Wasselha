@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".Transporter.TransporterSignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/collectionPointProviderSignupTopTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/logoInCustomerSignupPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/splash_logo" />
+
+                <TextView
+                    android:id="@+id/collectionPointProviderSignupTopTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collection_point_provider_signup_top_title"
+                    android:textColor="@color/light_selver"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/logoInCustomerSignupPage"
+                    app:layout_constraintStart_toStartOf="@+id/logoInCustomerSignupPage"
+                    app:layout_constraintTop_toBottomOf="@+id/logoInCustomerSignupPage" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/signup_background"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:id="@+id/firstNametextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name_customer"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/firstNameCollectionPointProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/first_name_customer_hint"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lastNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/last_name_customer"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/lastNameCollectionPointProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/last_name_customer_hint"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/collectionPointProviderSignupTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/national_id_signup_textview"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nationalIDCollectionPointProviderSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/national_id_transporter_signup_hint"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phoneNumberCollectionPointProviderSignupTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/phone_number_customer_signup_textview"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phoneNumberCollectionPointProviderSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/phone_number_customer_signup_hint"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/emailCollectionPointProviderSignupTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/email_customer_signup_textview"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/emailCollectionPointProviderSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/email_signup_customer_hint"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/passwordCollectionPointProviderSignupTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/passwordc_customer_signup_textview"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/passwordCollectionPointProviderSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/password_customer_signup_hint"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/repeatPasswordCustomerCollectionPointProviderTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/re_repeat_password_customer_signup"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/repeatPasswordCollectionPointProviderSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="@string/re_repeat_password_hint"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_green"
+                    android:textColorHint="@color/quantum_grey600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/errorMessageInCollectionPointProviderSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textDirection="firstStrong" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signupCollectionPointProviderBtn"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/signup_background"
+                android:text="@string/signup"
+                android:textColor="@color/dark_green"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

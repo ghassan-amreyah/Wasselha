@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_selver"
+    tools:context=".Customer.AddReviewForATransporterActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/dark_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/changasemibold"
+            android:text="@string/add_review"
+            android:textColor="@color/light_selver"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/filter_style"
+                    android:orientation="vertical"
+                    android:padding="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addNewServiceMainTitle">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_review_about_customer"
+                        android:textColor="@color/light_selver"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/transporterReviewInCustomerReservationDetailsRadio"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/signup_as_transporter"
+                                android:textColor="@color/light_selver"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/sourceCollectionPointReviewInCustomerReservationDetailsRadio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/source_collection_point"
+                                android:textColor="@color/light_selver"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                            <RadioButton
+                                android:id="@+id/DestinationCollectionPointReviewInCustomerReservationDetailsRadio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/destination_collection_point"
+                                android:textColor="@color/light_selver"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_in_add_review_a_transporter"
+                        android:textColor="@color/light_selver"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/reviewAboutTransporterEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_filter_style"
+                        android:ems="10"
+                        android:hint="@string/enter_the_review_in_add_review_a_transporter"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textColor="@color/light_selver"
+                        android:textColorHint="@color/light_selver"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/message_in_add_review_a_transporter"
+                        android:textColor="@color/light_selver"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/noteAboutTransporterInReviewTransporter"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_filter_style"
+                        android:ems="10"
+                        android:hint="@string/enter_the_notes_in_add_review_a_transporter"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textColor="@color/light_selver"
+                        android:textColorHint="@color/light_selver"
+                        android:textSize="16sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/addReviewAboutTransporterBtn"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/signup_background"
+                        android:text="Add review"
+                        android:textColor="@color/dark_green"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errorMessageInAddReviewAboutTransporter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/red"
+                        android:textDirection="firstStrong"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

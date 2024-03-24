@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageInCustomerNotificationsListView"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/image_profile_style"
+        />
+
+    <LinearLayout
+        android:id="@+id/pathLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/imageInCustomerNotificationsListView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sourceCityInListViewMainPageTransporter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not available"
+            android:textSize="16sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/to"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destinationCityInListViewMainPageTransporter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not available"
+            android:textSize="16sp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeOfServiceInListViewMainPageTransporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/quantum_grey700"
+        android:layout_below="@+id/pathLinearLayout"
+        android:layout_toEndOf="@+id/imageInCustomerNotificationsListView"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="Not available time!" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_close" />
+
+</RelativeLayout>
